@@ -1,6 +1,6 @@
 import { EnvNetworkName, EnvVariables } from './types'
 
-const DEFAULT_NETWORK_ENVIRONMENT: EnvNetworkName = 'rinkeby'
+const DEFAULT_NETWORK_ENVIRONMENT: EnvNetworkName = 'ropsten'
 
 export const ENV_VARS: EnvVariables = {
   NETWORK_ENVIRONMENT() {

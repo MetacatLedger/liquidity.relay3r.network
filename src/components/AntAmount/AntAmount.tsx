@@ -36,7 +36,7 @@ function AntAmount({ amount, version, ...props }: AntAmountProps): JSX.Element {
           margin-left: ${0.75 * GU}px;
         `}
       >
-        ANT{version}
+        RLR{version}
       </span>
     </span>
   )

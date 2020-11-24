@@ -1,19 +1,22 @@
+/*
 import tokenUsdcSvg from './assets/token-usdc.svg'
 import tokenEthSvg from './assets/token-eth.svg'
-import tokenUniSvg from './assets/token-uni.svg'
 import tokenBptSvg from './assets/token-bpt.svg'
+*/
+import tokenUniSvg from './assets/token-uni.svg'
+
+import tokenRLRSvg from './assets/token-rlr-v2.svg'
+import tokenSushiPng from './assets/token-sushilp.png'
+
 import { ContractGroup } from './environment/types'
 
 export enum PoolRoute {
-  UniswapAntV2 = '/uniswap-antv2-eth',
-  Balancer = '/balancer-antv2-usdc',
+  UniswapRlr = '/uniswap-antv2-eth',
+  Sushiswap = '/balancer-antv2-usdc',
   UniswapAntV1 = '/uniswap-ant-eth',
 }
 
-export type PoolName =
-  | 'unipoolAntV1Eth'
-  | 'unipoolAntV2Eth'
-  | 'balancerAntV2Usdc'
+export type PoolName = 'unipoolRlrEth' | 'sushiswapRlrEth'
 
 export type PoolAttributes = {
   title: string
@@ -36,68 +39,47 @@ export type PoolAttributes = {
 
 export const KNOWN_LIQUIDITY_POOLS = new Map<PoolName, PoolAttributes>([
   [
-    'unipoolAntV2Eth',
+    'unipoolRlrEth',
     {
-      title: 'Uniswap ANTv2 / ETH',
-      path: PoolRoute.UniswapAntV2,
+      title: 'Uniswap RLR / ETH',
+      path: PoolRoute.UniswapRlr,
       stakeToken: {
         graphic: tokenUniSvg,
-        symbol: 'UNI',
+        symbol: 'ULP',
         decimals: 18,
       },
       rewardToken: {
-        graphic: tokenEthSvg,
-        symbol: 'WETH',
+        graphic: tokenRLRSvg,
+        symbol: 'RLR',
         decimals: 18,
       },
-      contractGroup: 'unipoolAntV2',
+      contractGroup: 'unipoolRLRETH',
       endDate: 'November 12th, 15:00 UTC',
       liquidityUrl:
-        'https://info.uniswap.org/pair/0x9def9511fec79f83afcbffe4776b1d817dc775ae',
-      ended: true,
+        'https://info.uniswap.org/pair/0xe4332d93b4f0477d5230852f59d2621e2acdea1a',
+      ended: false,
     },
   ],
   [
-    'balancerAntV2Usdc',
+    'sushiswapRlrEth',
     {
-      title: 'Balancer ANTv2 / USDC',
-      path: PoolRoute.Balancer,
+      title: 'Sushiswap RLR / ETH',
+      path: PoolRoute.Sushiswap,
       stakeToken: {
-        graphic: tokenBptSvg,
-        symbol: 'BPT',
+        graphic: tokenSushiPng,
+        symbol: 'SLP',
         decimals: 18,
       },
       rewardToken: {
-        graphic: tokenUsdcSvg,
-        symbol: 'USDC',
-        decimals: 6,
+        graphic: tokenRLRSvg,
+        symbol: 'RLR',
+        decimals: 18,
       },
       contractGroup: 'balancer',
       endDate: 'November 12th, 15:00 UTC',
       liquidityUrl:
-        'https://pools.balancer.exchange/#/pool/0xde0999ee4e4bea6fecb03bf4ebef2626942ec6f5/',
-      ended: true,
-    },
-  ],
-  [
-    'unipoolAntV1Eth',
-    {
-      title: 'Uniswap ANT / ETH',
-      path: PoolRoute.UniswapAntV1,
-      stakeToken: {
-        graphic: tokenUniSvg,
-        symbol: 'UNI',
-        decimals: 18,
-      },
-      rewardToken: {
-        graphic: tokenEthSvg,
-        symbol: 'ETH',
-        decimals: 18,
-      },
-      contractGroup: 'unipoolAntV1',
-      liquidityUrl: null,
-      endDate: 'August 21st, 2020',
-      ended: true,
+        'https://sushiswap.fi/token/0x5b3F693EfD5710106eb2Eac839368364aCB5a70f/',
+      ended: false,
     },
   ],
 ])

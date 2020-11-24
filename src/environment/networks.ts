@@ -11,12 +11,7 @@ const networks = new Map<EnvNetworkName, EnvNetworkConfig>([
       },
       ipfsGateway: 'https://ipfs.eth.aragon.network/ipfs',
       contracts: {
-        unipoolAntV1: {
-          poolContract: '0xEA4D68CF86BcE59Bf2bFA039B97794ce2c43dEBC',
-          lpToken: '0xfa19de406e8F5b9100E4dD5CaD8a503a6d686Efe', // UNI
-          rewardToken: '0x960b236A07cf122663c4303350609A66A7B288C0', // ANT
-        },
-        unipoolAntV2: {
+        unipoolRLRETH: {
           poolContract: '0x37b7870148b4b815cb6a4728a84816cc1150e3aa',
           lpToken: '0x9def9511fec79f83afcbffe4776b1d817dc775ae', // UNI
           rewardToken: '0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2', // WETH
@@ -30,24 +25,19 @@ const networks = new Map<EnvNetworkName, EnvNetworkConfig>([
     },
   ],
   [
-    'rinkeby',
+    'ropsten',
     {
-      chainId: 4,
-      legacyNetworkType: 'rinkeby',
+      chainId: 3,
+      legacyNetworkType: 'ropsten',
       endpoints: {
-        ethereum: 'https://rinkeby.eth.aragon.network/',
+        ethereum: 'https://ropsten.eth.aragon.network/',
       },
       ipfsGateway: 'https://ipfs.eth.aragon.network/ipfs',
       contracts: {
-        unipoolAntV1: {
-          poolContract: '0xd91c406571cd6edcdd67e3519096c868dfc160d5',
-          lpToken: '0xa117000000f279d81a1d3cc75430faa017fa5a2e',
-          rewardToken: '0xa117000000f279d81a1d3cc75430faa017fa5a2e',
-        },
-        unipoolAntV2: {
-          poolContract: '0xd91c406571cd6edcdd67e3519096c868dfc160d5',
-          lpToken: '0xa117000000f279d81a1d3cc75430faa017fa5a2e',
-          rewardToken: '0xa117000000f279d81a1d3cc75430faa017fa5a2e',
+        unipoolRLRETH: {
+          poolContract: '0xEC11712256aA6D260cE684A2E54E14f88C29E686',
+          lpToken: '0xc25a4E07D7e1f8464D52dE0054613Fe74504aF7b',
+          rewardToken: '0x2DCFA66aEd3901D180d937A2DA233F3F8CDd58C8',
         },
         balancer: {
           poolContract: '0xd91c406571cd6edcdd67e3519096c868dfc160d5',

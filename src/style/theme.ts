@@ -1,6 +1,6 @@
 export const theme = {
   _name: 'aragon-upgrade',
-  _appearance: 'light',
+  _appearance: 'dark',
   accent: '#00c2ff',
   accentStart: '#01e8f7',
   accentEnd: '#00c2ff',

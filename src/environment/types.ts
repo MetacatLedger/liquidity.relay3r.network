@@ -1,7 +1,7 @@
-export type EnvNetworkName = 'ethereum' | 'rinkeby'
+export type EnvNetworkName = 'ethereum' | 'ropsten'
 
-type LegacyNetworkType = 'main' | 'rinkeby'
-type ChainId = 1 | 4
+type LegacyNetworkType = 'main' | 'ropsten'
+type ChainId = 1 | 3
 
 export interface EnvVariables {
   NETWORK_ENVIRONMENT(): string
@@ -18,7 +18,7 @@ interface PoolContracts {
   poolContract: string
 }
 
-export type ContractGroup = 'unipoolAntV1' | 'unipoolAntV2' | 'balancer'
+export type ContractGroup = 'unipoolRLRETH' | 'balancer'
 
 export interface EnvNetworkConfig {
   chainId: ChainId

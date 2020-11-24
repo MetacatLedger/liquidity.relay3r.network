@@ -1,7 +1,7 @@
 import React from 'react'
 // @ts-ignore
 import { unselectable, GU } from '@aragon/ui'
-import headerLogoSvg from '../../assets/aragon-logo-mark.svg'
+import headerLogoSvg from '../../assets/relayer-logo-mark.svg'
 
 function HeaderLogo(): JSX.Element {
   return (

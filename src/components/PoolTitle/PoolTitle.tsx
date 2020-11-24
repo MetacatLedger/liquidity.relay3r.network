@@ -2,16 +2,14 @@ import React from 'react'
 // @ts-ignore
 import { GU, useTheme, useLayout } from '@aragon/ui'
 import TokenIcon from '../TokenIcon/TokenIcon'
-import antV1 from '../../assets/token-ant-v1.svg'
-import antV2 from '../../assets/token-ant-v2.svg'
+import antV2 from '../../assets/token-rlr-v2.svg'
 import eth from '../../assets/token-eth.svg'
-import usdc from '../../assets/token-usdc.svg'
+// import usdc from '../../assets/token-usdc.svg'
 import { PoolName } from '../../known-liquidity-pools'
 
 const TOKEN_PAIR: Record<PoolName, [string, string]> = {
-  unipoolAntV2Eth: [antV2, eth],
-  balancerAntV2Usdc: [antV2, usdc],
-  unipoolAntV1Eth: [antV1, eth],
+  unipoolRlrEth: [antV2, eth],
+  sushiswapRlrEth: [antV2, eth],
 }
 
 type PoolTitleProps = {
