@@ -18,7 +18,7 @@ interface PoolContracts {
   poolContract: string
 }
 
-export type ContractGroup = 'unipoolRLRETH' | 'balancer'
+export type ContractGroup = 'unipoolRLRETH' | 'mooniswap'
 
 export interface EnvNetworkConfig {
   chainId: ChainId

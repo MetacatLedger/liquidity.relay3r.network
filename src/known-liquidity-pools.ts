@@ -2,17 +2,18 @@
 import tokenUsdcSvg from './assets/token-usdc.svg'
 import tokenEthSvg from './assets/token-eth.svg'
 import tokenBptSvg from './assets/token-bpt.svg'
+import tokenSushiPng from './assets/token-sushilp.png'
 */
 import tokenUniSvg from './assets/token-uni.svg'
+import tokenMooniSvg from './assets/token-mooniswap.svg'
 
 import tokenRLRSvg from './assets/token-rlr-v2.svg'
-import tokenSushiPng from './assets/token-sushilp.png'
 
 import { ContractGroup } from './environment/types'
 
 export enum PoolRoute {
   UniswapRlr = '/uniswap-antv2-eth',
-  Sushiswap = '/balancer-antv2-usdc',
+  Mooniswap = '/mooniswap-antv2-usdc',
   UniswapAntV1 = '/uniswap-ant-eth',
 }
 
@@ -54,7 +55,7 @@ export const KNOWN_LIQUIDITY_POOLS = new Map<PoolName, PoolAttributes>([
         decimals: 18,
       },
       contractGroup: 'unipoolRLRETH',
-      endDate: 'November 12th, 15:00 UTC',
+      endDate: 'December 26th, 8:12 GMT',
       liquidityUrl:
         'https://info.uniswap.org/pair/0xe4332d93b4f0477d5230852f59d2621e2acdea1a',
       ended: false,
@@ -63,11 +64,11 @@ export const KNOWN_LIQUIDITY_POOLS = new Map<PoolName, PoolAttributes>([
   [
     'sushiswapRlrEth',
     {
-      title: 'Sushiswap RLR / ETH',
-      path: PoolRoute.Sushiswap,
+      title: 'Mooniswap RLR / ETH',
+      path: PoolRoute.Mooniswap,
       stakeToken: {
-        graphic: tokenSushiPng,
-        symbol: 'SLP',
+        graphic: tokenMooniSvg,
+        symbol: 'MLP',
         decimals: 18,
       },
       rewardToken: {
@@ -75,10 +76,10 @@ export const KNOWN_LIQUIDITY_POOLS = new Map<PoolName, PoolAttributes>([
         symbol: 'RLR',
         decimals: 18,
       },
-      contractGroup: 'balancer',
-      endDate: 'November 12th, 15:00 UTC',
+      contractGroup: 'mooniswap',
+      endDate: 'December 26th, 8:12 GMT',
       liquidityUrl:
-        'https://sushiswap.fi/token/0x5b3F693EfD5710106eb2Eac839368364aCB5a70f/',
+        'https://mooniswap.info/pair/0xf83f2c42d7b38394f67368c859756f10761bef42/',
       ended: false,
     },
   ],

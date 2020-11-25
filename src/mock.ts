@@ -24,10 +24,10 @@ export async function mockPromiseLatency(ms: number): Promise<boolean> {
 }
 
 export const MOCK_LP_BALANCES: [
-  'balancer' | 'uniswap' | 'incentive',
+  'mooniswap' | 'uniswap' | 'incentive',
   BigNumber
 ][] = [
-  ['balancer', parseUnits('1', 18)],
+  ['mooniswap', parseUnits('1', 18)],
   ['uniswap', parseUnits('234.342423', 18)],
   ['incentive', parseUnits('8532', 18)],
 ]
