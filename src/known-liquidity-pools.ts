@@ -12,12 +12,12 @@ import tokenRLRSvg from './assets/token-rlr-v2.svg'
 import { ContractGroup } from './environment/types'
 
 export enum PoolRoute {
-  UniswapRlr = '/uniswap-antv2-eth',
-  Mooniswap = '/mooniswap-antv2-usdc',
+  UniswapRlr = '/uniswap-rlreth',
+  Mooniswap = '/mooniswap-rlreth',
   UniswapAntV1 = '/uniswap-ant-eth',
 }
 
-export type PoolName = 'unipoolRlrEth' | 'sushiswapRlrEth'
+export type PoolName = 'unipoolRlrEth' | 'mooniswapRlrEth'
 
 export type PoolAttributes = {
   title: string
@@ -62,7 +62,7 @@ export const KNOWN_LIQUIDITY_POOLS = new Map<PoolName, PoolAttributes>([
     },
   ],
   [
-    'sushiswapRlrEth',
+    'mooniswapRlrEth',
     {
       title: 'Mooniswap RLR / ETH',
       path: PoolRoute.Mooniswap,

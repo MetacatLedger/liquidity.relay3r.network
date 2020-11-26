@@ -9,7 +9,7 @@ import { PoolName } from '../../known-liquidity-pools'
 
 const TOKEN_PAIR: Record<PoolName, [string, string]> = {
   unipoolRlrEth: [antV2, eth],
-  sushiswapRlrEth: [antV2, eth],
+  mooniswapRlrEth: [antV2, eth],
 }
 
 type PoolTitleProps = {
