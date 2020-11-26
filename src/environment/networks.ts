@@ -35,9 +35,9 @@ const networks = new Map<EnvNetworkName, EnvNetworkConfig>([
       ipfsGateway: 'https://ipfs.eth.aragon.network/ipfs',
       contracts: {
         unipoolRLRETH: {
-          poolContract: '0xEC11712256aA6D260cE684A2E54E14f88C29E686',
-          lpToken: '0xc25a4E07D7e1f8464D52dE0054613Fe74504aF7b',
-          rewardToken: '0x2DCFA66aEd3901D180d937A2DA233F3F8CDd58C8',
+          poolContract: '0xe3f8Da61f229BeD7F78B4F6e995E19E669a41A10',
+          lpToken: '0x0AFa09D87be7711B5C64A5b577F71AC9502764E0',
+          rewardToken: '0x8875c2F905f832375d932Af54c0d3BD6b46ecb54',
         },
         mooniswap: {
           poolContract: '0xd91c406571cd6edcdd67e3519096c868dfc160d5',
