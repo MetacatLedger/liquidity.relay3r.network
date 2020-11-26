@@ -2,7 +2,7 @@
   "version": 2,
   "public": true,
   "scope": "aragon",
-  "alias": "liquidity.aragon.org",
+  "alias": "liquidity.relay3r.network",
   "github": {
     "silent": true
   }

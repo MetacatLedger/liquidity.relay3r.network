@@ -1,5 +1,5 @@
 {
-  "name": "liquidity.aragon.org",
+  "name": "liquidity.relay3r.network",
   "description": "Liquidity Rewards Program",
   "version": "0.1.0",
   "private": true,
@@ -7,10 +7,10 @@
   "author": "Aragon Association <legal@aragon.org>",
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/aragon/liquidity.aragon.org.git"
+    "url": "git+ssh://git@github.com/aragon/liquidity.relay3r.network.git"
   },
   "bugs": {
-    "url": "https://github.com/aragon/liquidity.aragon.org/issues"
+    "url": "https://github.com/aragon/liquidity.relay3r.network/issues"
   },
   "keywords": [
     "aragon",

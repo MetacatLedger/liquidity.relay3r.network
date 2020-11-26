@@ -8,7 +8,7 @@ import LayoutGutter from '../Layout/LayoutGutter'
 const RLR_URL = 'https://relay3r.network'
 const BLOG_URL = 'https://akshaycm.medium.com/'
 
-const ARAGON_WEBSITE_URL = 'https://aragon.org'
+const ARAGON_WEBSITE_URL = RLR_URL
 
 function Footer(): JSX.Element {
   const { layoutName } = useLayout()

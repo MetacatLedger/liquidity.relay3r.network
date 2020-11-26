@@ -12,14 +12,14 @@ const networks = new Map<EnvNetworkName, EnvNetworkConfig>([
       ipfsGateway: 'https://ipfs.eth.aragon.network/ipfs',
       contracts: {
         unipoolRLRETH: {
-          poolContract: '0x37b7870148b4b815cb6a4728a84816cc1150e3aa',
-          lpToken: '0x9def9511fec79f83afcbffe4776b1d817dc775ae', // UNI
-          rewardToken: '0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2', // WETH
+          poolContract: '0x93c05dFBDC926742B46f8465640859845d123B67',
+          lpToken: '0xe4332d93B4f0477d5230852f59D2621E2AcdEa1A', // UNI
+          rewardToken: '0x5b3F693EfD5710106eb2Eac839368364aCB5a70f', // WETH
         },
         mooniswap: {
-          poolContract: '0x7f2b9e4134ba2f7e99859ae40436cbe888e86b79',
-          lpToken: '0xde0999ee4e4bea6fecb03bf4ebef2626942ec6f5', // BPT
-          rewardToken: '0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48', // USDC
+          poolContract: '0xaF7346ef991d6C60714A6e021fe34461aFba795D',
+          lpToken: '0xF83f2C42d7b38394F67368c859756F10761beF42', // BPT
+          rewardToken: '0x5b3F693EfD5710106eb2Eac839368364aCB5a70f', // USDC
         },
       },
     },
